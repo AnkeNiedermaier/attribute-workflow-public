@@ -7,19 +7,21 @@ With this PythonPart it is possible to fullfill the complete workflow related to
 Each option can be used independentlys.
 
 ## Installation
-The PythonPart **AttributeWorkflow** can be installed directly from the Plugin Manager in ALLPLAN. 
+The PythonPart **AttributeWorkflow** can be installed directly from the PluginManager in ALLPLAN. 
 
 Alternatively, the corresponding ***.allep** package can be downloaded from the [release page](https://github.com/AnkeNiedermaier/attribute-workflow-public/releases). ***.allep** files are ALLPLAN internal setups that can be installed via drag and drop into the program window.
 
 At least the version 2026 is needed to install the PythonPart.
 
 ## Installed PythonPart Scripts
-If the installation was successfull, the PythonPart **AttribSetHandling.pyp** can be found
+If the installation was successfull, the PythonPart **AttributeWorkfolw.pyp** can be found
 in the ALLPLAN Library:
-`Office` → `ALLPLAN GmbH` → `AttributeWorkflow`
+`Office` → `Library` → `ALLPLAN GmbH` → `AttributeWorkflow`
+
+Besides the library, the PythonParts can also be found in the ActionBar in a newly created task area **AttributeTools** inside the task **Plug-ins**.
 
 ## Excel template
-As the complete workflow covered with this PythonPart is based on Excel, a predefined file is also installed with the PythonPart.
+As the complete workflow covered with this PythonPart is based on Excel, a predefined file **Schema_AttributeWorkflow.xlsx** is also installed with the PythonPart. It is initially stored at the same place in the library (`Office` → `Library` → `ALLPLAN GmbH`) but can be moved afterward to any folder
 
 > ⚠️IMPORTANT\
 The schema and structure of the Ecxel file is fixed and predefined and should not be changed, otherwise the PythonPart will not run correctly!
