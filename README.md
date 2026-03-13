@@ -44,7 +44,7 @@ with all relevant rows, columns and cells
 
 to enter the parameters for the **creation of attributes** with a syntax similar to the one in ALLPLAN. Selection list values for the PullDown of ComboBox and ListBox attributes are entered in the column H and following
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "./docs/AttribDef_Allplan.png" width = 300/> <br>
-<img src = "./docs/AttribDef_Table.png" width = 600/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "./docs/AttribDef_Allplan.png" width = 500/> <br><br>
+<img src = "./docs/AttribDef_Table.png" width = 800/>
 
 
