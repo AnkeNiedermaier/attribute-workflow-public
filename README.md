@@ -77,6 +77,9 @@ Only the **IFC Property column** has a special syntax as it can be used in diffe
 - enter a name for the IFC property if different from the one in ALLPLAN
 - enter an **X** to prevent the attribute transfer to IFC
 
+> ⚠️IMPORTANT\
+It is generaly recommended to use no "special characters" like "ä" or "!" as this can lead to problems and slow down the mapping file creation
+
 ## Workflow
 
 Once installed, all ALLPLAN PythonParts can be found in the **Library palette**, no matter if an additional ActionBar entry is created or not. They are generally started either with a **double-click** on the icon or per **Drag and Drop** into the viewport. This shows the corresponding Properties palette and executes the underlying skripts
@@ -90,3 +93,9 @@ each represented in an individual section. The general upper part is relevant fo
 For the attribute assignment also the relevant **identifier** attribute that holds the **ident_value** has to be determined. This is done in selecting it from the attribute dialog that is shown in clicking the corresponding button
 
 All steps of the workflow can be executed independent and mainly the assignment repetead sequential with different specifications and identifiers
+
+## Video
+
+<a href="https://raw.githubusercontent.com/AnkeNiedermaier/attribute-workflow-public/main/docs/PP_AttributeWorkflow.mp4" target="_blank">
+  <img src="https://raw.githubusercontent.com/AnkeNiedermaier/attribute-workflow-public/main/docs/AttributeWorkflow_video.png" alt="Click to play video" width="600" height="300">
+</a>
