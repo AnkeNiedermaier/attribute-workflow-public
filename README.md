@@ -97,5 +97,5 @@ All steps of the workflow can be executed independent and mainly the assignment 
 ## Video
 
 <a href="https://raw.githubusercontent.com/AnkeNiedermaier/attribute-workflow-public/main/docs/PP_AttributeWorkflow.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/AnkeNiedermaier/attribute-workflow-public/main/docs/AttributeWorkflow_video.png" alt="Click to play video" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/AnkeNiedermaier/attribute-workflow-public/main/docs/AttributeWorkflow _video.png" alt="Click to play video" width="600" height="300">
 </a>
