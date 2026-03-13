@@ -3,7 +3,7 @@
 With this PythonPart it is possible to fullfill the complete workflow related to attribute and information managemenet. It mainly contains **3 individual steps** that can be executed more or less automatically:
 - **define** attributes
 - **assign** attributes to dedicated objects
-- **create** a **mapping table** for the Ifc export
+- **create** a **mapping table** for the IFC export
 
 An **Excel file** with a predefined schema serves as bais for each of them that is also delivered and installed as essential component of the PythonPart.
 
@@ -47,4 +47,46 @@ to enter the parameters for the **creation of attributes** with a syntax similar
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "./docs/AttribDef_Allplan.png" width = 500/> <br><br>
 <img src = "./docs/AttribDef_Table.png" width = 800/>
 
+> ⚠️IMPORTANT\
+In the current state of the PythonPart the Control element formula is not yet supported
 
+### Assignment
+
+serves to define combinations of a **filter/select statemen** together with **pairs of attributes** that are assigned to all objects that fulfill the select criteria. Similar to the ALLPLAN functionality **Filter by Attribute** it is a combination of an attribute and its value. Thereby the relevant attribute is defined when running the PythonPart, whereas its required value is entered in the **ident_value** column. Each pair of attributes that should be assigned to the filtered objects consists of the **attribute name** and if applicable a **value** and are entered in the columns named accordingly. If no value is entered only the attribute itself is assigned and its value stays empty
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "./docs/Filter_Allplan.png" width = 500/> <br><br>
+<img src = "./docs/Filter_Table.png" width = 700/>
+
+### Matrix
+
+can be used in addition or as an alternative if only attribute assignement without values is needed. The **filter/select statemen** is also defined in the **ident_value** column here, whereas the attributes to be assigned are selected in entering an **X** in the column with the corresponding **attribute name**
+
+<img src = "./docs/Matrix_Table.png" width = 400/>
+
+Which of the sheets **Assignment** or **Matrix** should be taken into account is decided during the execution of the PythonPart
+
+### Mapping
+
+is used to define a **mapping table (*.cfg)** that can be used during the IFC export to control the attribute transfer. The structure in the sheet is almost identical to the one in the ALLPLAN dialog
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "./docs/Mapping_Allplan.png" width = 400/> <br><br>
+<img src = "./docs/Mapping_Table.png" width = 500/>
+
+Only the **IFC Property column** has a special syntax as it can be used in different ways:
+- left empty if the IFC property name should be the same as in ALLPLAN
+- enter a name for the IFC property different from the one in ALLPLAN
+- enter an **X** to prevent the attribute transfer to IFC
+
+## Workflow
+
+Once installed, all ALLPLAN PythonPart can be found in the **Library palette**, no matter if an additional ActionBar entry is created or not. They are generally started either with a **double-click** on the icon or per **Drag and Drop** into the viewport. This shows the corresponding Properties palette and executes the underlying skripts
+
+As the workflow as such and the Excel schema table, also the palette is structured in the 3 steps
+- Definition
+- Assignment
+- Mapping
+
+each represented in an individual section. The general upper part is relevant for all steps and serves to **select and open** the **Excel table** and **sheet** and the **path and name** to **save** the **mapping table**. Independend of the intended function the first step is always the Excel file selection, otherwise none of them can be executed.
+For the attribute assignment also the relevant **identifier** attribute that holds the **ident_value** has to be determined. This is done in selectin it from the attribute dialog that is shown in clicking the corresponding button
+
+All steps of the workflow can be executed independent and mainly the assignement repetaed sequential with different specifications and identifiers
